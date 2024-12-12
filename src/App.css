@@ -1,0 +1,114 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+/* Genel Stil */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+  color: #333;
+  text-align: center;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Ürün Listesi */
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.product-card p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Sepet */
+.cart-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+  margin-bottom: 20px;
+}
+
+.cart-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-container h3 {
+  margin-top: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%;
+  }
+
+  .cart-container {
+    padding: 10px;
+  }
+}
